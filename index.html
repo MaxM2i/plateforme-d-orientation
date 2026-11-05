@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1424">
+  <title>MYWAY AI — Trouvez votre voie</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home"><span class="brand-mark">✳</span><span>MYWAY<span class="brand-ai"> AI</span></span></a>
+    <nav class="desktop-nav">
+      <a href="#how" data-page="home">Comment ça marche</a>
+      <a href="#modules" data-page="home">Notre méthode</a>
+    </nav>
+    <div class="top-actions">
+      <span class="saved-state" id="savedState">Session invitée</span>
+      <button class="btn btn-small btn-outline" id="resetBtn">Réinitialiser</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page active" id="homePage">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> CAREER INTELLIGENCE PLATFORM</div>
+          <h1>Et si votre prochain métier était <span class="gradient-text">celui qui vous ressemble&nbsp;?</span></h1>
+          <p class="lead">Une exploration guidée de votre personnalité, vos aptitudes, vos motivations et votre mode de vie pour faire émerger des pistes professionnelles concrètes.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="startBtn">Commencer mon exploration <span>↗</span></button>
+            <a class="text-link" href="#how">Découvrir la méthode <span>↓</span></a>
+          </div>
+          <div class="trust-row"><span>✓ Sans inscription au départ</span><span>✓ À votre rythme</span><span>✓ Vous gardez le contrôle</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="core"><div class="core-inner">✳</div></div>
+          <div class="float-card card-top"><small>VOTRE PROFIL</small><strong>En construction</strong><span class="mini-bars"><i></i><i></i><i></i><i></i><i></i></span></div>
+          <div class="float-card card-bottom"><small>EXPLORATION IA</small><strong>Plusieurs voies possibles</strong><span class="tiny-status"><b></b> Analyse progressive</span></div>
+          <div class="orbit-label label-a">PERSONNALITÉ</div><div class="orbit-label label-b">POTENTIEL</div><div class="orbit-label label-c">ASPIRATIONS</div>
+        </div>
+      </div>
+      <section class="section" id="modules">
+        <div class="section-heading"><div class="eyebrow">UNE APPROCHE À 360°</div><h2>Comprendre la personne, pas seulement son CV.</h2><p>Les recommandations croisent plusieurs dimensions pour éviter les réponses toutes faites.</p></div>
+        <div class="module-grid">
+          <article class="module-card"><div class="module-icon">◈</div><h3>Personnalité</h3><p>Traits, préférences relationnelles, valeurs et environnements appréciés.</p><span>01 / SELF</span></article>
+          <article class="module-card"><div class="module-icon">⌁</div><h3>Comportements</h3><p>Réactions à des situations professionnelles réalistes et choix spontanés.</p><span>02 / ACTION</span></article>
+          <article class="module-card"><div class="module-icon">◎</div><h3>Aptitudes</h3><p>Compétences déclarées, exercices et capacités à développer.</p><span>03 / SKILLS</span></article>
+          <article class="module-card"><div class="module-icon">⌖</div><h3>Mode de vie</h3><p>Rythme, mobilité, autonomie, rémunération et équilibre souhaité.</p><span>04 / LIFE</span></article>
+        </div>
+      </section>
+      <section class="how" id="how">
+        <div><div class="eyebrow">VOTRE PARCOURS</div><h2>De la découverte à l'action.</h2><p>Une première exploration sans compte. Vos réponses restent dans ce navigateur pendant cette démonstration.</p></div>
+        <div class="steps"><div><b>01</b><span><strong>Vous découvrir</strong><small>Des questions adaptatives et des mises en situation.</small></span></div><div><b>02</b><span><strong>Explorer les métiers</strong><small>Des pistes argumentées, avec leurs points de vigilance.</small></span></div><div><b>03</b><span><strong>Construire la suite</strong><small>Des étapes réalistes pour tester et concrétiser une piste.</small></span></div></div>
+      </section>
+      <footer>MYWAY AI <span>Prototype de démonstration · France</span></footer>
+    </section>
+
+    <section class="page" id="assessmentPage">
+      <div class="assessment-shell">
+        <div class="assessment-top"><button class="back-btn" id="backHome">← Accueil</button><span class="step-counter" id="stepCounter">ÉTAPE 1 / 6</span></div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <div class="assessment-layout">
+          <aside class="assessment-aside"><div class="eyebrow">MYWAY DISCOVERY</div><h2>Votre profil se dessine au fil de vos réponses.</h2><p>Il n'y a pas de bonne ou de mauvaise réponse. Choisissez ce qui vous ressemble aujourd'hui.</p><div class="aside-note"><span>✳</span><small>Vous pourrez revenir sur vos réponses avant de consulter la synthèse.</small></div></aside>
+          <div class="question-panel">
+            <div class="question-kicker" id="questionKicker">VOTRE SITUATION</div>
+            <h1 id="questionTitle">Pour commencer, où en êtes-vous aujourd'hui ?</h1>
+            <p id="questionHelp">Cela nous aide à contextualiser les pistes professionnelles.</p>
+            <div id="answerArea" class="answer-area"></div>
+            <div class="question-footer"><span id="answerHint">Sélectionnez une réponse pour continuer.</span><button class="btn btn-primary" id="nextBtn" disabled>Continuer <span>→</span></button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="resultsPage">
+      <div class="results-wrap">
+        <div class="results-head"><div><div class="eyebrow">VOTRE PREMIÈRE SYNTHÈSE</div><h1>Des pistes à explorer.<br><span class="gradient-text">Pas une case où vous enfermer.</span></h1><p>Cette synthèse est une démonstration basée sur vos réponses à un court questionnaire, pas une évaluation psychologique validée.</p></div><div class="result-chip">MODE INVITÉ · LOCAL</div></div>
+        <div class="result-grid">
+          <article class="result-panel profile-panel"><div class="panel-label">TENDANCES EXPLORATOIRES</div><h2>Votre aperçu de profil</h2><div id="profileTags" class="tag-list"></div><p id="profileSummary"></p><div class="notice">Ces tendances sont des hypothèses à discuter et à vérifier par vos expériences réelles.</div></article>
+          <article class="result-panel"><div class="panel-label">PISTES PROFESSIONNELLES</div><h2>Des univers à investiguer</h2><div id="careerList" class="career-list"></div></article>
+        </div>
+        <div class="next-actions"><div><div class="eyebrow">PROCHAINE ÉTAPE</div><h2>Affinons votre profil.</h2><p>Un parcours complet ajoutera des scénarios comportementaux, des exercices d'aptitudes, un entretien IA et des données métiers françaises actualisées.</p></div><button class="btn btn-primary" id="restartBtn">Recommencer l'exploration ↗</button></div>
+        <footer>MYWAY AI <span>Prototype de démonstration · Les résultats ne constituent pas un conseil professionnel certifié.</span></footer>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
