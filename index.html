@@ -60,16 +60,16 @@
 
     <section class="page" id="assessmentPage">
       <div class="assessment-shell">
-        <div class="assessment-top"><button class="back-btn" id="backHome">← Accueil</button><span class="step-counter" id="stepCounter">ÉTAPE 1 / 6</span></div>
+        <div class="assessment-top"><button class="back-btn" id="backHome">← Accueil</button><span class="step-counter" id="stepCounter">ÉTAPE 1 / 11</span></div>
         <div class="progress-track"><div id="progressBar"></div></div>
         <div class="assessment-layout">
-          <aside class="assessment-aside"><div class="eyebrow">MYWAY DISCOVERY</div><h2>Votre profil se dessine au fil de vos réponses.</h2><p>Il n'y a pas de bonne ou de mauvaise réponse. Choisissez ce qui vous ressemble aujourd'hui.</p><div class="aside-note"><span>✳</span><small>Vous pourrez revenir sur vos réponses avant de consulter la synthèse.</small></div></aside>
+          <aside class="assessment-aside"><div class="eyebrow">MYWAY DISCOVERY</div><h2>Votre profil se dessine au fil de vos réponses.</h2><p>Il n'y a pas de bonne ou de mauvaise réponse. Choisissez ce qui vous ressemble aujourd'hui.</p><div class="aside-note"><span>✳</span><small>Certaines questions acceptent plusieurs choix. Lorsque c'est utile, vous pourrez les classer par ordre de priorité.</small></div></aside>
           <div class="question-panel">
             <div class="question-kicker" id="questionKicker">VOTRE SITUATION</div>
             <h1 id="questionTitle">Pour commencer, où en êtes-vous aujourd'hui ?</h1>
             <p id="questionHelp">Cela nous aide à contextualiser les pistes professionnelles.</p>
             <div id="answerArea" class="answer-area"></div>
-            <div class="question-footer"><span id="answerHint">Sélectionnez une réponse pour continuer.</span><button class="btn btn-primary" id="nextBtn" disabled>Continuer <span>→</span></button></div>
+            <div class="question-footer"><span id="answerHint">Choisissez une ou plusieurs réponses selon les consignes.</span><button class="btn btn-primary" id="nextBtn" disabled>Continuer <span>→</span></button></div>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
       <div class="results-wrap">
         <div class="results-head"><div><div class="eyebrow">VOTRE PREMIÈRE SYNTHÈSE</div><h1>Des pistes à explorer.<br><span class="gradient-text">Pas une case où vous enfermer.</span></h1><p>Cette synthèse est une démonstration basée sur vos réponses à un court questionnaire, pas une évaluation psychologique validée.</p></div><div class="result-chip">MODE INVITÉ · LOCAL</div></div>
         <div class="result-grid">
-          <article class="result-panel profile-panel"><div class="panel-label">TENDANCES EXPLORATOIRES</div><h2>Votre aperçu de profil</h2><div id="profileTags" class="tag-list"></div><p id="profileSummary"></p><div class="notice">Ces tendances sont des hypothèses à discuter et à vérifier par vos expériences réelles.</div></article>
+          <article class="result-panel profile-panel"><div class="panel-label">TENDANCES EXPLORATOIRES</div><h2>Votre aperçu de profil</h2><div id="profileTags" class="tag-list"></div><p id="profileSummary"></p><div class="notice" id="profileDisclaimer">Ces tendances sont des hypothèses à discuter et à vérifier par vos expériences réelles.</div><div class="dimension-list" id="dimensionList"></div><p id="constraintSummary" class="constraint-summary"></p></article>
           <article class="result-panel"><div class="panel-label">PISTES PROFESSIONNELLES</div><h2>Des univers à investiguer</h2><div id="careerList" class="career-list"></div></article>
         </div>
         <div class="next-actions"><div><div class="eyebrow">PROCHAINE ÉTAPE</div><h2>Affinons votre profil.</h2><p>Un parcours complet ajoutera des scénarios comportementaux, des exercices d'aptitudes, un entretien IA et des données métiers françaises actualisées.</p></div><button class="btn btn-primary" id="restartBtn">Recommencer l'exploration ↗</button></div>
